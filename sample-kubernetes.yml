@@ -1,0 +1,9 @@
+kubernetes:
+  enabled: true
+  accounts:
+    - name: default
+      kubeconfigFile: configserver:kubeconfig.yml
+      dockerRegistries:
+        - accountName: dockerhub
+          namespaces: []
+      context: default
